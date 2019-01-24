@@ -27,4 +27,7 @@ USD python can be found in the libs directory of this repo if you don't have it 
 
 Opens the target .blend file and exports a gltf, dae and usdz files in the output directory.
 
+# TODO
 
+- Collada doesn't seem to export textures for all channels, only colour
+- Mutiple source file input / watch folder

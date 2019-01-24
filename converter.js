@@ -36,7 +36,7 @@ var task_finished = false;
 
 function export_gltf()
 {
-	console.log('---- EXPORTING GLTF ------');
+	console.log('EXPORTING GLTF....');
 
 	var gltf_args = 
 	[
@@ -53,7 +53,7 @@ function export_gltf()
 
 function export_collada()
 {
-	console.log('---- EXPORTING DAE COLLADA ------');
+	console.log('EXPORTING DAE COLLADA....');
 
 	var collada_args = 
 	[
@@ -70,7 +70,7 @@ function export_collada()
 
 function export_usdz()
 {
-	console.log('---- EXPORTING USDZ ------');
+	console.log('EXPORTING USDZ....');
 
     var usdz_args = 
 	[
@@ -148,6 +148,7 @@ function loop()
 		{
 			if(task_finished === true)
 			{
+				console.log('GLTF exported to ' + gltf_path);
 				export_collada();
 				state = State.DAE;
 			}
@@ -157,6 +158,7 @@ function loop()
 		{
 			if(task_finished === true)
 			{
+				console.log('DAE exported to ' + dae_path);
 				export_usdz();
 				state = State.USDZ;
 			}
@@ -166,9 +168,11 @@ function loop()
 		{
 			if(task_finished === true)
 			{
+				console.log('USDZ exported to ' + usdz_path);
 				process.exit(1);
 				return;
 			}
+			break;
 		}
 	}
 }
