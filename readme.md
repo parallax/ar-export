@@ -1,8 +1,14 @@
+# Description
+
+Converts Blender3D .blend files into .dae (collada), .gltf and .usdz files for use with AR viewers.
+
 # Requirements
 
 - Blender 2.8
 - Xcode 11
 - Nodejs
+
+# Usage
 
 The converter script will need know where to find the Blender executable and USD python libraries. 
 To do this is to create a `.env` file in this directory and enter the following values...
