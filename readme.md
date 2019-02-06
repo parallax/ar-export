@@ -1,5 +1,8 @@
 # ARexport
 
+ARexport is a [Parallax](https://parall.ax) open-source project, written by Gareth Battensby.
+
+
 ## Description
 
 Converts Blender3D .blend files into .dae (collada), .gltf and .usdz files for use with AR viewers.
